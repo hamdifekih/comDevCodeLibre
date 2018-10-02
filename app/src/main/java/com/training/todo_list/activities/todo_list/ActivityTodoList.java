@@ -91,6 +91,7 @@ public class ActivityTodoList extends ListActivity implements AdapterView.OnItem
 
     @Override
     public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+        Toast.makeText(ActivityTodoList.this,"Ask edit todo",Toast.LENGTH_SHORT).show();
         Intent intent=new Intent(ActivityTodoList.this,ActivityTodoAdd.class);
         startActivity(intent);
 
